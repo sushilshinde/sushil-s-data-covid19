@@ -1,7 +1,7 @@
 {
   "name": "sushil-s-data-covid19",
   "version": "1.0.0",
-  "description": "",
+  "description": "[SB Admin 2](https://startbootstrap.com/template-overviews/sb-admin-2/) is an open source admin dashboard theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).",
   "main": "index.js",
   "scripts": {
     "start": "node ./index.js"
@@ -17,16 +17,20 @@
   },
   "homepage": "https://github.com/sushilshinde/sushil-s-data-covid19#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "morgan": "^1.10.0",
-    "serve-static": "^1.14.1",
     "@fortawesome/fontawesome-free": "5.10.2",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
     "bootstrap": "4.3.1",
     "chart.js": "2.8.0",
+    "cheerio": "^1.0.0-rc.3",
     "datatables.net-bs4": "1.10.19",
+    "express": "^4.17.1",
     "jquery": "3.4.1",
-    "jquery.easing": "^1.4.1"
+    "jquery.easing": "^1.4.1",
+    "mathjs": "^6.6.2",
+    "morgan": "^1.10.0",
+    "request": "^2.88.2",
+    "serve-static": "^1.14.1"
   },
   "devDependencies": {
     "browser-sync": "2.26.7",
@@ -40,5 +44,6 @@
     "gulp-sass": "4.0.2",
     "gulp-uglify": "3.0.2",
     "merge-stream": "2.0.0"
-  }
+  },
+  "keywords": []
 }
