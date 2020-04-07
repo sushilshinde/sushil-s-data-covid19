@@ -14,7 +14,7 @@ const axios = require('axios');
 app.use(bp.urlencoded({ extended: false }));
 app.use(serveStatic(path.join(__dirname)));
 
-app.use('v1/api/covid-data',(req,response) => {
+app.use('/v1/api/covid-data',(req,response) => {
 
     let db = []
 
@@ -40,6 +40,7 @@ app.use('v1/api/covid-data',(req,response) => {
         });
         response.send(JSON.stringify(db));  
     })
+
 })
 
 app.use('/',(req,res) => {
