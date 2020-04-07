@@ -2,9 +2,10 @@ const express = require("express")
 const app = express()
 const bp = require("body-parser")
 var path = require('path');
+var serveStatic = require('serve-static')
 
 app.use(bp.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, 'html')));
+app.use(serveStatic(path.join(__dirname, 'html')));
 
 app.use('/',(req,res) => {
     res.sendFile('index.html', { root: __dirname });
