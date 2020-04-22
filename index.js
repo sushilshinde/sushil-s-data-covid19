@@ -61,6 +61,7 @@ app.use('/v1/api/covid-data',async(req,response) => {
             await storage.setItem('tt',moment().toString())
             await storage.setItem('data',JSON.stringify(db))
             console.log("serving realtime",secondsPassed)
+            respose.setHeader('content-type', 'text/plain');
             response.send(JSON.stringify(db));      
             })
 
