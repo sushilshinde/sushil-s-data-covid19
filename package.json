@@ -28,7 +28,7 @@
     "jquery": "3.4.1",
     "jquery.easing": "^1.4.1",
     "lokijs": "^1.5.8",
-    "mathjs": "^6.6.2",
+    "mathjs": "^7.5.1",
     "memory-key-value-store": "0.0.0",
     "moment": "^2.24.0",
     "morgan": "^1.10.0",
